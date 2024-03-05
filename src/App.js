@@ -10,13 +10,14 @@ import Resume from './components/Resume';
 function App() {
   return (
     <div className="App">
-        <Header/>
+        <Headerd/>
         <Hero />
         <About/>
         <Projects/>
         <Resume/>
         <Contact/>
         <Footer/>
+        
     </div>
   );
 }

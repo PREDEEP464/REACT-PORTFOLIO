@@ -1,6 +1,7 @@
-import websiteImg1 from '../assets/ecommerce-websites.jpg';
-import websiteImg2 from '../assets/food-ecommerce.jpg';
-import websiteImg3 from '../assets/website-blog.jpg';
+import websiteImg1 from '../assets/ChatApp.png';
+import websiteImg2 from '../assets/BankApp.png';
+import websiteImg3 from '../assets/PwdVaultApp.png';
+
 
 export default function Projects() {
 
@@ -8,17 +9,17 @@ export default function Projects() {
         projects : [
             {
                 image: websiteImg1,
-                description: 'A Ecommerce Website. Built with MERN Stack.',
+                description: 'A Simple Chat App',
                 link: 'https://github.com/'
             },
             {
                 image: websiteImg2,
-                description: 'Food Ecommerce website like Swiggy, Built with Angular & .Net',
+                description: 'A Secure Bank App',
                 link: 'https://github.com/'
             },
             {
                 image: websiteImg3,
-                description: 'Basic Blog Website . Built with Next JS and MongoDB',
+                description: 'A Safe Password Vault App',
                 link: 'https://github.com/'
             }
         ]
@@ -27,7 +28,7 @@ export default function Projects() {
     return <section id='projects' className="flex  flex-col py-20 px-5 justify-center bg-primary text-white">
         <div className="w-full">
             <div className="flex flex-col px-10 py-5">
-                <h1 className="text-4xl border-b-4 border-secondary mb-5 w-[150px] font-bold">Projects</h1>
+                <h1 className="text-4xl  text-blue-600 mb-5 w-[150px] font-bold">Projects</h1>
             </div>
         </div>
         <div className="w-full">

@@ -1,11 +1,11 @@
 import PP from '../assets/ProfilePic.png';
-import { AiOutlineTwitter, AiOutlineFacebook, AiOutlineLinkedin } from "react-icons/ai";
+import { AiOutlineTwitter, AiOutlineFacebook, AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
 
 export default function Hero() {
     const config  = {
         subtitle: 'Im a Full-stack developer and an aspiring designer',
         social: {
-            twitter: '',
+            github: '',
             facebook: '',
             linkedin: ''
         }
@@ -18,7 +18,7 @@ export default function Hero() {
                 <p className='text-2xl'>{config.subtitle}</p>
             </h1>
             <div className='flex flex-col gap-10 py-10'>
-                <a href={config.social.twitter} className='pr-5 hover:text-blue-600 text-white'><AiOutlineTwitter size={40} /></a>
+                <a href={config.social.github} className='pr-5 hover:text-blue-600 text-white'><AiOutlineGithub size={40} /></a>
                 <a href={config.social.facebook} className='pr-5 hover:text-blue-600 text-white'><AiOutlineFacebook size={40}/></a>
                 <a href={config.social.linkedin} className='hover:text-blue-600 text-white'><AiOutlineLinkedin size={40}/></a>
             </div>

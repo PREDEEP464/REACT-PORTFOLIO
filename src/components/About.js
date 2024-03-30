@@ -13,8 +13,8 @@ export default function About () {
                 <img src={Abt} width="500" height="350" />
             </div>
             <div className='md:w-1/2 flex justify-center pr-40'> 
-                <div className='flex flex-col justify-center text-white'>
-                    <h1 className='text-4xl mb-5 w-[170px] font-bold text-blue-600'>About Me</h1>
+                <div className='flex flex-col justify-center text-white font-hero-font'>
+                    <h1 className='text-4xl mb-5 w-[270px] font-bold text-blue-600'>⭐About Me⭐</h1>
                     <p className='pb-5'>{config.line1}</p>
                     <p className='pb-5'>{config.line2}</p>
                     <p className='pb-5'>{config.line3}</p>

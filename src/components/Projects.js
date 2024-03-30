@@ -28,7 +28,7 @@ export default function Projects() {
     return <section id='projects' className="flex  flex-col py-20 px-5 justify-center bg-primary text-white">
         <div className="w-full">
             <div className="flex flex-col px-10 py-5">
-                <h1 className="text-4xl  text-blue-600 mb-5 w-[150px] font-bold">Projects</h1>
+                <h1 className="text-4xl  text-blue-600 font-hero-font mb-5 w-[270px] font-bold">💻Projects</h1>
             </div>
         </div>
         <div className="w-full">

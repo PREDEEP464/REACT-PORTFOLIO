@@ -5,9 +5,9 @@ export default function Header() {
     const [toggleMenu, setToggleMenu]  = useState(false);
 
     return <header className="flex justify-between px-5 py-2 bg-primary ">
-        <a className="font-bold text-white hover:text-blue-600" href="#">Predeep</a>
+        <a className="font-bold text-red-200 hover:text-blue-600" href="/">Predeep</a>
         <nav className="hidden md:block">
-            <ul className="flex text-white ">
+            <ul className="flex text-red-200 ">
                 <li><a className="hover:text-blue-600 font-bold" href="/">Home</a></li>
                 <li><a className="hover:text-blue-600 font-bold" href="/#about">About</a></li>
                 <li><a className="hover:text-blue-600 font-bold" href="/#projects">Projects</a></li>

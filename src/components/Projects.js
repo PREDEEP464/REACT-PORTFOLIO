@@ -10,17 +10,17 @@ export default function Projects() {
             {
                 image: websiteImg1,
                 description: 'A Simple Chat App',
-                link: 'https://github.com/'
+                link: 'https://github.com/PREDEEP464/Chat_App'
             },
             {
                 image: websiteImg2,
                 description: 'A Secure Bank App',
-                link: 'https://github.com/'
+                link: 'https://github.com/PREDEEP464/BANKING_APP'
             },
             {
                 image: websiteImg3,
                 description: 'A Safe Password Vault App',
-                link: 'https://github.com/'
+                link: 'https://github.com/PREDEEP464/GVM2024'
             }
         ]
     }

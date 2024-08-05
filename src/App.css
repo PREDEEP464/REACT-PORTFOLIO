@@ -33,3 +33,7 @@ header ul li {
 html {
     scroll-behavior: smooth;
 }
+
+#about {
+    padding-top: 100px; 
+}

@@ -1,19 +1,37 @@
 import ResumeImg from '../assets/resume.jpg';
 
-export default function Resume () {
+export default function Resume() {
     const config = {
-        link: 'https://drive.google.com/file/d/1isKrf19nBSHgbkRnkSYc6KmeShr8iLN3/view?usp=drive_link'
+        link: 'https://drive.google.com/file/d/1WjvS0xO4ziweKmFZawg3c3-0e5geQVbe/view?usp=drive_link'
     }
 
-    return <section id='resume' className='flex flex-col md:flex-row bg-secondary px-5'>
-        <div className='py-5 md:w-1/2 flex justify-center md:justify-end'>
-            <img className='w-[300px]' src={ResumeImg} />
-        </div>
-        <div className='md:w-1/2 flex justify-center'>
-            <div className='flex flex-col gap-8 justify-center text-white pr-40'>
-                <h1 className='text-5xl  mb-5 w-[280px] font-hero-font text-blue-600 font-bold'>📎Resume</h1>
-                <p className='pb-5'><a target='_blank' className='btn hover:bg-violet-500' href={config.link} download> Download</a></p>
+    return (
+        <section id='resume' className='flex flex-col md:flex-row bg-gradient-to-r from-red-600 via-purple-700 to-orange-500 px-5 py-10 md:py-20'>
+            <div className='py-5 md:w-1/2 flex justify-center md:justify-end'>
+                <img 
+                    className='w-[300px] md:w-[400px] border-4 shadow-lg rounded-lg' 
+                    src={ResumeImg} 
+                    alt="Resume" 
+                />
             </div>
-        </div>
-    </section>
+            <div className='md:w-1/2 flex flex-col items-center justify-center'>
+                <div className='flex flex-col gap-8 text-white text-center md:text-left'>
+                    <h1 className='text-6xl md:text-5xl font-hero-font text-yellow-300 font-bold'>
+                        📎 Resume
+                    </h1>
+                    <h3 className="text-2xl text-gray-300 font-semibold mb-4">Get my Resume here</h3>
+                    <div className='mt-2'>
+                        <a 
+                            target='_blank' 
+                            className='bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-white hover:text-black transition-colors duration-300'
+                            href={config.link} 
+                            download
+                        >
+                            Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
 }

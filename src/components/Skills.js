@@ -17,12 +17,12 @@ export default function Portfolio() {
     ];
 
     const toolsAndLanguages = [
-        { href: 'https://nodejs.org', src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg', alt: 'Node.js' },,
-        { href: 'https://expressjs.com', src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg', alt: 'Express' },
-        { href: 'https://www.mongodb.com/', src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg', alt: 'MongoDB' },
-        { href: 'https://www.cprogramming.com/', src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg', alt: 'C' },
-        { href: 'https://www.w3schools.com/css/', src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg', alt: 'CSS3' },
-        { href: 'https://www.w3.org/html/', src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg', alt: 'HTML5' }
+        { src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg', alt: 'Node.js'},
+        { src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg', alt: 'Express' },
+        { src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg', alt: 'MongoDB' },
+        { src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg', alt: 'C' },
+        { src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg', alt: 'CSS3' },
+        { src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg', alt: 'HTML5' }
     ];
 
     return (

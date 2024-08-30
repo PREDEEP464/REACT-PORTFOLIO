@@ -1,4 +1,4 @@
-import PP from '../assets/ProfilePic.png';
+import PP from '../assets/Profile Pic.jpg';
 import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
 
 export default function Hero() {

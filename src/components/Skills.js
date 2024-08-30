@@ -8,6 +8,7 @@ export default function Portfolio() {
         { src: 'https://techstack-generator.vercel.app/mysql-icon.svg', alt: 'MySQL' },
         { src: 'https://techstack-generator.vercel.app/java-icon.svg', alt: 'Java' },
         { src: 'https://techstack-generator.vercel.app/python-icon.svg', alt: 'Python' },
+        { src: 'https://techstack-generator.vercel.app/cpp-icon.svg', alt: 'C++' }
     ];
 
     const socialLinks = [

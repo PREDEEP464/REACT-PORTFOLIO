@@ -1,43 +1,77 @@
-import PP from '../assets/Profile Pic.jpg';
-import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
+'use client'
+
+import PP from '../assets/Profile Pic.jpg'  // Import the image
+import { motion } from 'framer-motion'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 export default function Hero() {
-    const config = {
-        subtitle: 'A Full-stack developer and an aspiring designer',
-        social: {
-            github: 'https://github.com/PREDEEP464',
-            linkedin: 'https://www.linkedin.com/in/predeepkumar-u-s-4b012325a/'
-        }
+  const config = {
+    name: 'Predeep',
+    subtitle: 'A Full-stack developer and an aspiring designer',
+    social: {
+      github: 'https://github.com/PREDEEP464',
+      linkedin: 'https://www.linkedin.com/in/predeepkumar-u-s-4b012325a/'
     }
+  }
 
-    return (
-        <section className='flex flex-col md:flex-row px-5 py-24 bg-gradient-to-r from-red-600 via-purple-700 to-orange-500 justify-center items-center'>
-            <div className='md:w-1/2 flex flex-col gap-3'>
-                <h1 className='text-white text-6xl font-hero-font mb-4'>
-                    Hi, I'm Predeep! <br />
-                    <p className='text-2xl'>{config.subtitle}</p>
-                </h1>
-                <div className='flex flex-col gap-6 py-6'>
-                    <h3 className='text-yellow-300 text-2xl font-hero-font mb-4'>Connect with me</h3>
-                    <div className='flex items-center mb-4'>
-                        <a href={config.social.github} target='_blank' className='pr-5 text-white flex items-center transition-transform duration-300 hover:scale-105 hover:text-blue-700'>
-                            <AiOutlineGithub size={40} />
-                            <span className='ml-2 text-2xl font-hero-font'>GITHUB</span>
-                        </a>
-                    </div>
-                    <div className='flex items-center'>
-                        <a href={config.social.linkedin} target='_blank' className='pr-5 text-white flex items-center transition-transform duration-300 hover:scale-105 hover:text-blue-700'>
-                            <AiOutlineLinkedin size={40} />
-                            <span className='ml-2 text-2xl font-hero-font'>LINKEDIN</span>
-                        </a>
-                    </div>
-                </div>
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-r from-red-600 via-purple-700 to-orange-500">
+      <div className="absolute inset-0 bg-black opacity-20"></div>
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="md:w-1/2 text-center md:text-left"
+          >
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
+              Hi, I'm {config.name}!
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-300 mb-8">
+              {config.subtitle}
+            </p>
+            <div className="flex justify-center md:justify-start space-x-4">
+              <SocialLink href={config.social.github} icon={FaGithub} label="GitHub" />
+              <SocialLink href={config.social.linkedin} icon={FaLinkedin} label="LinkedIn" />
             </div>
-            <img
-                className='w-72 h-72 md:w-1/3 md:h-auto mt-6 md:mt-0 object-cover'
-                src={PP}
+          </motion.div>
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            className="mt-12 md:mt-0 md:w-1/2 flex justify-center"
+          >
+            <div className="relative w-80 h-80 md:w-96 md:h-96"> {/* Increased the size here */}
+              {/* Use motion.img instead of next/image */}
+              <motion.img
+                src={PP} // Use the imported PP image directly here
                 alt="Profile"
-            />
-        </section>
-    );
+                className="rounded-full shadow-2xl" // Style for the round image
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8 }}
+              />
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function SocialLink({ href, icon: Icon, label }) {
+  return (
+    <motion.a
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center px-6 py-3 rounded-full text-white bg-white bg-opacity-20 hover:bg-opacity-30 transition-all duration-300"
+    >
+      <Icon className="w-6 h-6 mr-2" />
+      <span className="font-semibold">{label}</span>
+    </motion.a>
+  )
 }

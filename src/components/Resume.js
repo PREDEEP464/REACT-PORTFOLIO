@@ -2,11 +2,14 @@ import ResumeImg from '../assets/resume.jpg';
 
 export default function Resume() {
     const config = {
-        link: 'https://drive.google.com/file/d/1nmMzq1LtkHUC-QIeqL3v2RlWUPM-uU3c/view?usp=drive_link'
+        link: 'https://drive.google.com/file/d/1zD7p5de25w98SkIOGfviDXiNG1w0VFA2/view?usp=sharing'
     }
 
     return (
-        <section id='resume' className='flex flex-col md:flex-row bg-gradient-to-r from-red-600 via-purple-700 to-orange-500 px-5 py-10 md:py-20'>
+        <section id='resume' className='relative flex flex-col md:flex-row bg-gradient-to-r from-red-600 via-purple-700 to-orange-500 px-5 py-10 md:py-20'>
+            {/* Overlay div for dark background */}
+            <div className="absolute inset-0 bg-black opacity-20"></div>
+
             <div className='py-5 md:w-1/2 flex justify-center md:justify-end'>
                 <img 
                     className='w-[300px] md:w-[400px] border-4 shadow-lg rounded-lg' 
@@ -14,7 +17,7 @@ export default function Resume() {
                     alt="Resume" 
                 />
             </div>
-            <div className='md:w-1/2 flex flex-col items-center justify-center'>
+            <div className='md:w-1/2 flex flex-col items-center justify-center relative z-10'>
                 <div className='flex flex-col gap-8 text-white text-center md:text-left'>
                     <h1 className='text-6xl md:text-5xl font-hero-font text-yellow-300 font-bold'>
                         📎 Resume
